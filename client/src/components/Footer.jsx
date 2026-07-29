@@ -11,16 +11,15 @@ const Footer = () => {
                        Premium car rental service with a wide selection of luxury and everyday vehicles for all your driving needs. 
                     </p>
                     <div className='flex items-center gap-3 mt-6'>
-                        {/* Instagram */}
-                        <a href="#"><img src={assets.facebook_logo} className='w-5 h-5' alt="facebook_logo" /></a>
                        
-                        {/* Facebook */}
-                        <a href="#"><img src={assets.instagram_logo} className='w-5 h-5' alt="instagram_logo" /></a>
+                        <a href="https://www.facebook.com/share/1BQUsLTJRb/" target='_blank'><img src={assets.facebook_logo} className='w-5 h-5' alt="facebook_logo" /></a>
                        
-                        {/* Twitter */}
-                         <a href="#"><img src={assets.twitter_logo} className='w-5 h-5' alt="twitter_logo" /></a>
-                        {/* LinkedIn */}
-                         <a href="#"><img src={assets.gmail_logo} className='w-5 h-5' alt="gmail_logo" /></a>
+                       
+                        <a href="https://www.instagram.com/deepanshu.26_?igsh=dDl0bWE0a3AycHU3" target='_blank'><img src={assets.instagram_logo} className='w-5 h-5' alt="instagram_logo" /></a>
+                       
+                        
+                        
+                         <a href="mailto:deepanshudhakad381@gmail.com" target='_blank'><img src={assets.gmail_logo} className='w-5 h-5' alt='gmail_logo'/></a>
                     </div>
                 </div>
 
@@ -50,10 +49,12 @@ const Footer = () => {
                 <div>
                     <h2 className='text-base font-medium text-gray-800 uppercase' >Contact</h2>
                     <ul className='mt-3 flex flex-col gap-1.5'>
-                        <li>1234 Luxury Drive</li>
+                        <li>Jaipur</li>
                         <li>Rajasthan,India</li>
-                        <li>+91 12345678</li>
-                        <li>info@example.com</li>
+                        <li>
+                        <a href="tel:+918000739606">+91 8000739606</a>
+                        </li>
+                        <li><a href="mailto:deepanshudhakad381@gmail.com" target='_blank' >deepanshudhakad381@gmail.com</a></li>
                        
                     </ul>
                </div>
@@ -62,7 +63,7 @@ const Footer = () => {
             </div>
            
             <div className='flex flex-col md:flex-row gap-2 items-center justify-between py-5'>
-                <p>© {new Date().getFullYear()} <a href="https://prebuiltui.com">PrebuiltUI</a>. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} Deepanshu Dhakad. All rights reserved.</p>
                 <ul className='flex items-center gap-4'>
                     <li><a href="#">Privacy</a></li>
                     <li>|</li>

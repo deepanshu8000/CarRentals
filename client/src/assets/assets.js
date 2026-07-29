@@ -1,4 +1,4 @@
-import logo from "./favicon.ico";
+import logo from "./favicon.svg";
 import gmail_logo from "./gmail_logo.svg";
 import facebook_logo from "./facebook_logo.svg";
 import instagram_logo from "./instagram_logo.svg";
@@ -41,7 +41,7 @@ import car_image2 from "./car_image2.png"
 import car_image3 from "./car_image3.png"
 import car_image4 from "./car_image4.png"
 
-export const cityList = ['New York', 'Los Angeles', 'Houston', 'Chicago']
+export const cityList = ['Mansarovar', 'Gopalura', 'WTP', 'Mahal Road']
 
 export const assets = {
     logo,
@@ -103,8 +103,8 @@ export const ownerMenuLinks = [
 
 export const dummyUserData = {
   "_id": "6847f7cab3d8daecdb517095",
-  "name": "GreatStack",
-  "email": "admin@example.com",
+  "name": "Deepanshu Dhakad",
+  "email": "deepanshudhakadd381@gmail.com",
   "role": "owner",
   "image": user_profile,
 }
@@ -114,50 +114,50 @@ export const dummyCarData = [
         "_id": "67ff5bc069c03d4e45f30b77",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
         "brand": "BMW",
-        "model": "X5",
+        "model": "M3",
         "image": car_image1,
         "year": 2006,
-        "category": "SUV",
+        "category": "Sedan",
         "seating_capacity": 4,
         "fuel_type": "Hybrid",
         "transmission": "Semi-Automatic",
-        "pricePerDay": 300,
-        "location": "New York",
-        "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
+        "pricePerDay": 10000,
+        "location": "Mansarovar",
+        "description": "The BMW M3 is a mid-size luxury sedan produced by BMW. The M3 made its debut in 1999 as a sedan  produced by BMW.",
         "isAvaliable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
         "_id": "67ff6b758f1b3684286a2a65",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
-        "brand": "Toyota",
-        "model": "Corolla",
+        "brand": "BMW",
+        "model": "M2",
         "image": car_image2,
         "year": 2021,
         "category": "Sedan",
         "seating_capacity": 4,
         "fuel_type": "Diesel",
         "transmission": "Manual",
-        "pricePerDay": 130,
-        "location": "Chicago",
-        "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
+        "pricePerDay": 9999,
+        "location": "Gopalura",
+        "description": "The BMW M2 is a mid-size luxury sedan produced by BMW. The M2 made its debut in 2008 as a sedan produced by BMW.",
         "isAvaliable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
     },
     {
         "_id": "67ff6b9f8f1b3684286a2a68",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
-        "brand": "Jeep ",
-        "model": "Wrangler",
+        "brand": "Tesla ",
+        "model": "E",
         "image": car_image3,
         "year": 2023,
-        "category": "SUV",
+        "category": "Hatchback",
         "seating_capacity": 4,
-        "fuel_type": "Hybrid",
+        "fuel_type": "EV",
         "transmission": "Automatic",
-        "pricePerDay": 200,
-        "location": "Los Angeles",
-        "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
+        "pricePerDay": 11000,
+        "location": "WTP",
+        "description": "The Tesla E is a mid-size luxury hatchback produced by Tesla.  The Tesla E made its debut in 2003 as a hatchback produced by Tesla.",
         "isAvaliable": true,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
@@ -165,16 +165,16 @@ export const dummyCarData = [
         "_id": "68009c93a3f5fc6338ea7e34",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
         "brand": "Ford",
-        "model": "Neo 6",
+        "model": "Mustang",
         "image": car_image4,
         "year": 2022,
         "category": "Sedan",
         "seating_capacity": 2,
         "fuel_type": "Diesel",
         "transmission": "Semi-Automatic",
-        "pricePerDay": 209,
-        "location": "Houston",
-        "description": "This is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
+        "pricePerDay": 14000,
+        "location": "Mahal Road",
+        "description": "This is a mid-size luxury sedan produced by Ford. The Mustang made its debut in 1990 produced by Ford.",
         "isAvaliable": true,
         "createdAt": "2025-04-17T06:15:47.318Z",
     }
@@ -189,7 +189,7 @@ export const dummyMyBookingsData = [
         "pickupDate": "2025-06-13T00:00:00.000Z",
         "returnDate": "2025-06-14T00:00:00.000Z",
         "status": "confirmed",
-        "price": 440,
+        "price": 10000,
         "createdAt": "2025-06-10T12:57:48.244Z",
     },
     {
@@ -200,7 +200,7 @@ export const dummyMyBookingsData = [
         "pickupDate": "2025-06-12T00:00:00.000Z",
         "returnDate": "2025-06-12T00:00:00.000Z",
         "status": "pending",
-        "price": 130,
+        "price": 9999,
         "createdAt": "2025-06-10T12:57:25.613Z",
     },
     {
@@ -211,7 +211,7 @@ export const dummyMyBookingsData = [
         "pickupDate": "2025-06-11T00:00:00.000Z",
         "returnDate": "2025-06-12T00:00:00.000Z",
         "status": "pending",
-        "price": 600,
+        "price": 11000,
         "createdAt": "2025-06-10T09:55:06.379Z",
     },
     {
@@ -222,7 +222,7 @@ export const dummyMyBookingsData = [
         "pickupDate": "2025-06-11T00:00:00.000Z",
         "returnDate": "2025-06-12T00:00:00.000Z",
         "status": "confirmed",
-        "price": 440,
+        "price": 14000,
         "createdAt": "2025-06-10T09:44:25.410Z",
     }
 ]
@@ -236,5 +236,5 @@ export const dummyDashboardData = {
         dummyMyBookingsData[0],
         dummyMyBookingsData[1]
     ],
-    "monthlyRevenue": 840
+    "monthlyRevenue": 40000
 }
