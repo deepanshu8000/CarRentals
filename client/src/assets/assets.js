@@ -124,7 +124,7 @@ export const dummyCarData = [
         "pricePerDay": 10000,
         "location": "Mansarovar",
         "description": "The BMW M3 is a mid-size luxury sedan produced by BMW. The M3 made its debut in 1999 as a sedan  produced by BMW.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -141,7 +141,7 @@ export const dummyCarData = [
         "pricePerDay": 9999,
         "location": "Gopalura",
         "description": "The BMW M2 is a mid-size luxury sedan produced by BMW. The M2 made its debut in 2008 as a sedan produced by BMW.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
     },
     {
@@ -158,7 +158,7 @@ export const dummyCarData = [
         "pricePerDay": 11000,
         "location": "WTP",
         "description": "The Tesla E is a mid-size luxury hatchback produced by Tesla.  The Tesla E made its debut in 2003 as a hatchback produced by Tesla.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
     {
@@ -175,7 +175,7 @@ export const dummyCarData = [
         "pricePerDay": 14000,
         "location": "Mahal Road",
         "description": "This is a mid-size luxury sedan produced by Ford. The Mustang made its debut in 1990 produced by Ford.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-17T06:15:47.318Z",
     }
 ];

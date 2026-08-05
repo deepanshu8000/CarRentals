@@ -11,6 +11,7 @@ import AddCar from './pages/owner/AddCar';
 import Dashboard from './pages/owner/Dashboard';
 import ManageCar from './pages/owner/ManageCar';
 import ManageBooking from './pages/owner/ManageBooking';
+import Login from './components/Login';
 
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
   const isOwnerPath=useLocation().pathname.startsWith('/owner') /* hide navbar from owner dashboard */
   return (
     <>
+    {showLogin && <Login setShowLogin={setShowLogin}></Login>}
+    
      {!isOwnerPath && <Navbar setShowLogin={setShowLogin}/> /*navbar visible to all pages except owner dashboard*/}
      <Routes>
         <Route path='/' element={<Home/>}/> {/*To move from one pages to another */}
