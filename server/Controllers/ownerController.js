@@ -35,7 +35,7 @@ export const addCar = async (req, res) => {
 
         const image = response.url;
         await Car.create({ ...car, owner: _id, image })
-        res.json({ success: "true", message: "Car Added" })
+        res.json({ success: true, message: "Car Added" })
 
 
 
@@ -147,7 +147,31 @@ export const getdashboardData= async (req,res)=>{
         res.json({success: true ,dashboardData});
     }
     catch (error) {
-        console.log(error.message)
-        res.json({success: false,message: error.message})
+        console.log(error.message);
+        res.json({success: false,message: error.message});
+    }
+}
+
+//API to update user image
+export const updateUserImage = async (req,res)=>{
+    try {
+        const {_id}=req.user;
+        const imageFile = req.file
+        const fileBuffer = fs.readFileSync(imageFile.path)
+
+        // upload image to imageKit
+        const response = await imagekit.files.upload({
+            file: fileBuffer.toString('base64'),
+            fileName: imageFile.originalname,
+            folder: '/users'
+        });
+
+        const image = response.url;
+        await User.findByIdAndUpdate(_id, { image });
+        res.json({ success: true, message: "Image Updated" })
+
+    } catch (error) {
+        console.log(error.message);
+        res.json({success: false,message: error.message});
     }
 }

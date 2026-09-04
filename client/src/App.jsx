@@ -12,16 +12,19 @@ import Dashboard from './pages/owner/Dashboard';
 import ManageCar from './pages/owner/ManageCar';
 import ManageBooking from './pages/owner/ManageBooking';
 import Login from './components/Login';
+import {Toaster} from 'react-hot-toast';
+import { useAppContext } from './context/AppContext';
 
 
 const App = () => {
-  const[showLogin, setShowLogin]=useState(false);   /*navbar visible to all pages*/
+  const {showLogin}=useAppContext();   /*navbar visible to all pages*/
   const isOwnerPath=useLocation().pathname.startsWith('/owner') /* hide navbar from owner dashboard */
   return (
     <>
-    {showLogin && <Login setShowLogin={setShowLogin}></Login>}
+    <Toaster/>
+    {showLogin && <Login/>}
     
-     {!isOwnerPath && <Navbar setShowLogin={setShowLogin}/> /*navbar visible to all pages except owner dashboard*/}
+     {!isOwnerPath && <Navbar/> /*navbar visible to all pages except owner dashboard*/}
      <Routes>
         <Route path='/' element={<Home/>}/> {/*To move from one pages to another */}
         <Route path='/car-details/:id' element={<CarDetails />} />
