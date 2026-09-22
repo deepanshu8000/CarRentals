@@ -138,7 +138,7 @@ export const getdashboardData= async (req,res)=>{
 
         const dashboardData={
             totalCars:cars.length,
-            totalBookings:booking.length,
+            totalBookings:bookings.length,
             pendingBookings:pendingBookings.length,
             confirmedBookings:confirmedBookings.length,
             recentBookings:bookings.slice(0,3),
