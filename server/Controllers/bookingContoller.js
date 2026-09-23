@@ -10,7 +10,7 @@ const checkAvailability= async (car,pickupDate,returnDate)=>{
         returnDate:{$gte:pickupDate},
 
     })
-    return booking.length==0;
+    return bookings.length==0;
 }
 //API to check availability of car for a given date
 export const checkAvailabilityofCar=async(req,res)=>{
@@ -29,7 +29,7 @@ export const checkAvailabilityofCar=async(req,res)=>{
         })
         let availableCars=await Promise.all(availableCarsPromises);
         availableCars=availableCars.filter(car=>car.isAvailable === true);
-        Response.json({success: true,availableCars})
+        res.json({success: true,availableCars})
         
         
     } catch (error) {
@@ -73,7 +73,7 @@ export const createBooking=async(req,res)=>{
 export const getUserBooking=async(req,res)=>{
     try {
           const {_id}=req.user;
-          const bookings=await Booking.find({user:-id}).populate("car").sort({createdAt:-1});
+          const bookings=await Booking.find({user:_id}).populate("car").sort({createdAt:-1});
            res.json({success : true, bookings});
     } catch (error) {
         console.log(error.message);
